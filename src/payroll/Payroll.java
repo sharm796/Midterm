@@ -13,22 +13,40 @@ package payroll;
 public class Payroll 
 {
 
-   public double Salary;
-   public double bonus;
-  public String emp;
+   private double Salary;
+   private double bonus;
+   private String emp;
  
      /**constructor that takes the salary and employee name
       * 
       */
-   public Payroll(double Sal,String givenUser)
+   Payroll(){}
+   public Payroll(double Sal,String givenUser, double bonus)
         {
             Salary=Sal;
             emp=givenUser;
-                 
+          
         }
+   public double getSalary(){
+   return Salary;
+   }
+   public void setSalary(double Salary){
+    this.Salary=Salary;
+   }
+   public void setBonus(double bonus){
+    this.bonus=bonus;
+   }
+   public double getBonus(){
+   return bonus;
+   }
+   public double TotalSalary(){
+     return Salary+bonus;
+   }
+   
+}
+
       
      
     
     
-    
-}
+
