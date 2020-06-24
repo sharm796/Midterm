@@ -37,11 +37,9 @@ public class Payroll
     this.bonus=bonus;
    }
    public double getBonus(){
-   return bonus;
+   return (10/100)*Salary;
    }
-   public double TotalSalary(){
-     return Salary+bonus;
-   }
+  
    
 }
 
